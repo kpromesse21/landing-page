@@ -1,0 +1,304 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: poppins;
+  margin: 0;
+  padding: 0;
+}
+
+.p_gray {
+  color: rgba(66, 64, 64, 0.685);
+}
+
+.small {
+  font-size: 0.8rem;
+  margin: 0px;
+}
+
+h3 {
+  margin: 2px;
+}
+
+/* header */
+header {
+  display: flex;
+  /* border: 1px solid black; */
+  justify-content: space-around;
+  margin: 10px;
+}
+
+.nav {
+
+  list-style: none;
+  display: flex;
+  /* border: 1px solid black;  */
+  justify-content: center;
+  gap: 2vw;
+  align-items: center;
+}
+
+.nav>li {}
+
+.down {
+  transform: rotate(90deg);
+  height: 100%;
+  width: 10px;
+}
+
+/* first galerie */
+img {
+  width: 100%;
+  height: 100%;
+}
+
+.first_galerie>div {
+  position: relative;
+  align-items: center;
+}
+
+.sdiv {
+  margin: auto;
+  position: relative;
+  color: azure;
+  /* border: 1px solid red; */
+  bottom: 65%;
+  z-index: 3;
+}
+
+.sdiv>h2,
+.sdiv>p {
+  text-align: center;
+}
+
+.sdiv>p {
+  font-style: italic;
+}
+
+.sdiv>h1,
+.sdiv>a {
+  margin-left: 147px;
+}
+
+.sdiv>a {
+  border: 2px solid wheat;
+  display: inline-block;
+  padding: 10px;
+  margin-top: 20px;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: wheat;
+
+}
+
+.first_galerie {
+  margin: auto;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-rows: repeat(2, 1fr);
+  width: 95vw;
+  /* height: 400px; */
+  gap: 15px;
+}
+
+.left_banner_image {
+  grid-column: 1/2;
+  grid-row: 1/3;
+}
+
+/* categories */
+.container1 {
+  display: flex;
+  margin: auto;
+  gap: 20px;
+  /* justify-content: center; */
+  justify-content: space-between;
+  width: 70vw;
+}
+
+.container_child>img {
+  width: 100%;
+  height: 80%;
+}
+
+.next {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  z-index: 3;
+  top: 30%;
+  left: 10%
+;
+border: 1px solid black;
+}
+
+.prev {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  z-index: 3;
+  top: 30%;
+  left: 85%;
+  border: 1px solid black;
+}
+
+hr {
+  border-top: 0px solid black;
+  border-left: 0px solid black;
+  border-right: 0px solid black;
+  border-bottom: 0.5px dotted rgba(0, 0, 0, 0.11);
+  margin: 10px 0px;
+  padding: 10px 0px;
+}
+
+.intro {
+  margin-left: 189px;
+}
+
+/* explorer */
+.container2 {
+  display: flex;
+  width: 70vw;
+  margin: auto;
+  justify-content: space-between;
+  gap: 20px;
+
+}
+
+.child1 {
+  width: 50%;
+}
+
+.child2 {
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.child2>div {
+  margin: 10px;
+  background-color: #ebe5e5;
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  justify-items: center;
+
+}
+
+.no_img {
+  padding: 80px 0px;
+  box-sizing: border-box;
+}
+
+/* social media */
+.flexbox {
+  display: flex;
+  width: 70vw;
+  align-items: center;
+  /* border: 1px solid black; */
+  margin: auto;
+  justify-content: space-between;
+
+}
+
+.flexbox>img {
+  width: 160px;
+  ;
+  flex-shrink: 1;
+  /* align-items: center; */
+}
+
+.more {
+  text-decoration: none;
+  border: 1px solid black;
+  padding: 10px;
+  color: black;
+}
+
+.container4 {
+  display: flex;
+  flex-direction: row;
+  width: 70vw;
+  margin: auto;
+}
+
+.newsletter {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.desc {
+  /* border: 1px solid black; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.desc>div {
+  margin: 0px 10px;
+}
+
+input {
+  height: 30px;
+}
+
+input::placeholder {
+  font-style: italic;
+  left: 20px;
+}
+
+button {
+  background-color: #000;
+  height: 35px;
+  width: 35px;
+  color: antiquewhite;
+  box-sizing: border-box;
+}
+
+footer {
+  margin-top: 70px;
+  font-size: 0.8rem;
+  color: #fff;
+  background-color: #2a2828;
+}
+
+.top {
+  padding-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  width: 70vw;
+  /* align-items: center; */
+  margin: auto;
+}
+
+h5 {
+  margin-top: 0px;
+}
+
+footer>div>div>img {
+  width: 150px;
+  height: 50px;
+}
+
+.hrw {
+  border-top: 0.1px solid rgba(255, 255, 255, 0.195);
+  width: 70vw;
+  margin: auto !important;
+  opacity: 20%;
+  padding: 0 !important;
+}
+
+.bottom {
+  text-align: center;
+  margin: auto;
+  width: 70vw;
+}
+
+.social>a>img {
+  margin: 0 10px;
+  width: 20px;
+  height: 20px;
+}
