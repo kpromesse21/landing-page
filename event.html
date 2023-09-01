@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <h1><span class="logo_c">C</span><span class="logo_v">v</span></h1>
+            <p>credit vert</p>
+        </div>
+        <nav class="nav">
+            <a href="">accueil</a>
+            <a href="rendezvous.html">rendez-vous</a>
+            <a href="event.html">événements</a>
+            <a href="undercon.html">à propos</a>
+            <a href="#footer">nous contacter</a>
+        </nav>
+        <div class="nav-dropdown">
+            <button class="dropdown-btn" id="dropdown-btn" onclick="droped()">
+                <svg xmlns="http://www.w3.org/2000/svg" height="1.5em" fill="#14a54c"
+                    viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                    <path
+                        d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" />
+                </svg>
+            </button>
+            <button class="dropdown-btn" id="dropup-btn" onclick="dropup()"
+                style="color: red ;display:none;font-size:1.9rem">
+                X
+            </button>
+            <ul id="dropdown" style="">
+                <li><a href="/" class="">accueil</a></li>
+                <li><a href="{{ route('appointement') }}">rendez-vous</a></li>
+                <li><a href="{{ route('visit.event') }}">événements</a></li>
+                <li><a href="#footer">nous contacter</a></li>
+                <li><a href="undercon.html">à propos</a></li>
+                <li><a href="#footer">nous contacter</a></li>
+            </ul>
+            <script>
+                var i = 0;
+
+                function droped() {
+                    const menu = document.querySelector('#dropdown');
+                    const btn1 = document.querySelector('#dropdown-btn');
+                    const btn2 = document.querySelector('#dropup-btn');
+                    menu.style.display = "flex";
+                    btn2.style.display = "block";
+                    btn1.style.display = "none"
+                }
+
+                function dropup() {
+                    const menu = document.querySelector('#dropdown');
+                    const btn1 = document.querySelector('#dropdown-btn');
+                    const btn2 = document.querySelector('#dropup-btn');
+                    menu.style.display = "none";
+                    btn2.style.display = "none";
+                    btn1.style.display = "block"
+                }
+            </script>
+        </div>
+
+    </header>
+    <div class="event-app">
+        <div class="event-card">
+            <img src="images/mushekwa.jpg" alt="">
+            <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore animi voluptatem placeat.
+            </p>
+            <a href="" class="btn">lire plus</a>
+
+        </div><hr class="separator">
+        <div class="event-card">
+            <img src="images/mushekwa.jpg" alt="">
+            <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore animi voluptatem placeat.
+            </p>
+            <a href="" class="btn">lire plus</a>
+
+        </div><hr class="separator">
+        <!-- <hr class="separator"> -->
+        <div class="event-card">
+            <img src="images/mushekwa.jpg" alt="">
+            <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore animi voluptatem placeat.
+            </p>
+            <p class="event-date">25 mars 2022</p>
+            <a href="" class="btn">lire plus</a>
+
+        </div><hr class="separator">
+        <div class="event-card">
+            <img src="images/mushekwa.jpg" alt="">
+            <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore animi voluptatem placeat.
+            </p><p class="event-date">25 mars 2022</p>
+            <a href="" class="btn">lire plus</a>
+
+        </div><hr class="separator">
+        <div class="event-card">
+            <img src="images/mushekwa.jpg" alt="">
+            <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore animi voluptatem placeat.
+            </p><p class="event-date">25 mars 2022</p>
+            <a href="" class="btn"> lire plus</a>
+
+        </div><hr class="separator">
+        <div class="event-card">
+            <img src="images/mushekwa.jpg" alt="">
+            <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore animi voluptatem placeat.
+            </p><p class="event-date">25 mars 2022</p>
+            <a href="" class="btn">lire plus</a>
+
+        </div><hr class="separator">
+        <div class="event-card">
+            <img src="images/mushekwa.jpg" alt="">
+            <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore animi voluptatem placeat.
+            </p><p class="event-date">25 mars 2022</p>
+            <a href="" class="btn">lire plus</a>
+
+        </div>
+    </div>
+
+</body>
+
+</html>

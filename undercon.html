@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            margin: 0px;
+            padding: 0px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100vh;
+            background-color: #00000077;
+            z-index: 400;
+            position:relative;
+
+        }
+
+        body,
+        html {
+            padding: 0px;
+            margin: 0px;
+            color: #fff;
+            font-size: 2rem;
+            overflow: hidden;
+
+        }
+
+        .list {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 5vw;
+        }
+
+        img {
+            width: 100px;
+            height: 100px;
+        }
+
+        .mask {
+            background-image: url('/images/stevia.jpeg');
+            filter: blur(4px);
+            width: 100vw;
+            height: 100vh;
+            padding: 0px;
+            margin: 0px;
+            z-index: 1;
+            position: absolute;
+            overflow: hidden;
+
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .contain {
+            padding: 20px;
+        }
+
+        p {
+            text-align: center;
+            text-transform: capitalize;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="mask">
+
+    </div>
+    <div class="container">
+        <div class="contain">
+            <p>site en cours de developement</p>
+            <ul class="list">
+                <li><a href=""><img src="images/instagram.svg" alt=""></a></li>
+                <li><a href=""><img src="images/twitter.svg" alt=""></a></li>
+                <li><a href=""><img src="" alt=""></a></li>
+            </ul>
+        </div>
+
+    </div>
+</body>
+
+</html>

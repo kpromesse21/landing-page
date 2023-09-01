@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rendez-vous</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1><span class="logo_c">C</span><span class="logo_v">v</span></h1>
+            <p>credit vert</p>
+        </div>
+        <nav class="nav">
+            <a href="/">accueil</a>
+            <a href="">rendez-vous</a>
+            <a href="undercon.html">événements</a>
+            <a href="undercon.html">à propos</a>
+            <a href="#footer">nous contacter</a>
+        </nav>
+        <div class="nav-dropdown">
+            <button class="dropdown-btn" id="dropdown-btn" onclick="droped()">
+                <svg xmlns="http://www.w3.org/2000/svg" height="1.5em" fill="#14a54c"
+                    viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                    <path
+                        d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" />
+                </svg>
+            </button>
+            <button class="dropdown-btn" id="dropup-btn" onclick="dropup()"
+                style="color: red ;display:none;font-size:1.9rem">
+                X
+            </button>
+            <ul id="dropdown" style="">
+                <li><a href="index.html" class="">accueil</a></li>
+                <li><a hre="">rendez-vous</a></li>
+                <li><a href="envent.html">événements</a></li>
+                <li><a href="#footer">nous contacter</a></li>
+                <li><a href="undercon.html">à propos</a></li>
+                <li><a href="#footer">nous contacter</a></li>
+            </ul>
+            <script>
+                var i = 0;
+
+                function droped() {
+                    const menu = document.querySelector('#dropdown');
+                    const btn1 = document.querySelector('#dropdown-btn');
+                    const btn2 = document.querySelector('#dropup-btn');
+                    menu.style.display = "flex";
+                    btn2.style.display = "block";
+                    btn1.style.display = "none"
+                }
+
+                function dropup() {
+                    const menu = document.querySelector('#dropdown');
+                    const btn1 = document.querySelector('#dropdown-btn');
+                    const btn2 = document.querySelector('#dropup-btn');
+                    menu.style.display = "none";
+                    btn2.style.display = "none";
+                    btn1.style.display = "block"
+                }
+            </script>
+        </div>
+
+    </header>
+    <h1 class="title_app">rendez-vous</h1>
+    <div class="app">
+        <!-- calendar du mois -->
+        <!-- <div class="calendar">
+            <div class="calendar_header">
+                <h2 class="title_app">calendrier</h2>
+            </div>
+            <div class="month">
+                <div class="day"></div>
+                <div class="day"></div>
+                <div class="day"></div>
+                <div class="day"></div>
+                <div class="day"></div>
+                <div class="day"></div>
+                <div class="day"></div>
+                <div class="day"></div>
+                <div class="day"></div>
+                <div class="day"></div>
+                <div class="day"></div>
+                <div class="day"></div>
+                <div class="day"></div>
+                <div class="day"></div>
+                <div class="day"></div>
+                <div class="day"></div>
+                <div class="day"></div>
+                <div class="day"></div>
+                <div class="day"></div>
+                <div class="day"></div>
+                <div class="day"></div>
+                <div class="day"></div>
+                <div class="day"></div>
+                <div class="day"></div>
+                <div class="day"></div>
+                <div class="day"></div>
+                <div class="day"></div>
+                <div class="day"></div>
+                <div class="day"></div>
+                <div class="day"></div>
+                <div class="day"></div>
+                <div class="day"></div>
+                <div class="day"></div>
+                <div class="day"></div>
+                <div class="day"></div>
+             </div>
+            
+        </div> -->
+        
+        <!-- formulaire du rendez-vous -->
+        <div class="form">
+            <h2 class="title_app">description du rendez-vous <!--du <span>01/03/2012</span>--></h2>
+            <form action="" method="post">
+                <div class="form-control">
+                    <label for="">objet du rendez-vous</label><br>
+                    <input type="text" name="" id="">
+                </div>
+
+                <div class="form-control">
+                    <label for="">oraganisation</label><br>
+                    <input type="text" name="" id="">
+                </div>
+                <div class="form-control">
+                    <label for="mail">email de confirmation</label><br>
+                    <input type="email" name="mail" id="">
+                </div>
+                <div class="form-control">
+                    <label for="number">numero de telephone</label><br>
+                    <input type="tel" name="number" id="">
+                </div>
+                <div class="form-control">
+                    <label for="date">la date du rendez-vous</label><br>
+                    <input type="date" name="date" id="">
+                </div>
+                <div class="form-control">
+                    <label for="heure">heure choisis</label><br>
+                    <input type="time" name="heure" id="">
+                </div>
+                <div class="form-control">
+                    <label for="desc">description</label><br>
+                    <textarea name="desc" id="" cols="30" rows="10"></textarea>
+                </div>
+                <div class="form-control">
+                    <button type="submit">soumettre</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <footer id="footer">
+        <div class="top">
+            <div>
+                <h3>siege sociale</h3>
+                <ul class="address">
+                    <li>congo(kinshasa)</li>
+                    <li>province: Nord-kivu</li>
+                    <li>ville:Goma</li>
+                    <li>commune: Goma</li>
+                    <li>quartier: le volcan</li>
+                    <li>avenue:mont-Goma</li>
+                    <li>Numero:006</li>
+                </ul>
+
+            </div>
+            <div>
+                <h3>contactes téléphonique</h3>
+                <p>airtel :(243) 900 000 000</p>
+                <p>vodacom :(243) 900 000 000</p>
+                <p>orange:(243) 900 000 000</p>
+            </div>
+            <div>
+                <h3>heure et jours d'ouverture</h3>
+                <p>jours : 7 jours /7 jours</p>
+                <p>heures : 8h00 à 17h00</p>
+            </div>
+        </div>
+        <hr class="hrw">
+        <div class="bottom">
+            <p>copyright @ 2023 Creditvert.cd ltd.All rights reserved</p>
+            <p>deignt template</p>
+            <p class="social" style="text-align: center;">
+                <a href="#"><img src="images/twitter.svg" alt="social media twitter"></a>
+                <a href="#"><img src="images/instagram.svg" alt="social media linkedin"></a>
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>
